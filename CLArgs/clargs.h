@@ -16,31 +16,14 @@ namespace cl
 			string description_;
 			string version_;
 		public:
-			argument_parser()
-			{
-				this->description_ = nullptr;
-			}
+			argument_parser();
 
-			const string& get_description() const
-			{
-				return this->description_;
-			}
-
-			void set_description(const string& description)
-			{
-				this->description_ = description;
-			}
+			const string& get_description() const;
+			void set_description(const string& description);
 
 
-			const string& version() const
-			{
-				return version_;
-			}
-
-			void set_version(const string& version)
-			{
-				version_ = version;
-			}
+			const string& version() const;
+			void set_version(const string& version);
 		};
 
 	}
