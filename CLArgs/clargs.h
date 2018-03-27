@@ -2,6 +2,8 @@
 #define CLI_ARGS_H
 
 #include <string>
+#include <vector>
+#include "argument.h"
 
 using namespace std;
 
@@ -9,12 +11,13 @@ namespace cl
 {
 	namespace args
 	{
-		
+
 		class argument_parser
 		{
 		private:
 			string description_;
 			string version_;
+			vector<argument<?>> arguments_;
 		public:
 			argument_parser();
 
